@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Saaha</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="otherstyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <a href="#w" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <ul class="navbar-links">
+            <li><a  href="home.html">Home</a></li>
+            <li><a class="active" href="product.html">Products</a></li>
+            <li><a href="#home">FAQ/About Us</a></li>
+            <li><a href="contact.html">Contact Us </a></li>
+            <li><a href="#home"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
+    </nav>
+
+    <section id="page-header">
+        <h2>Products</h2>
+        <p>Save 50% more by shopping with us!</p>
+    </section>
+
+    
+    
+    <section id="products-page">
+        <h2>All Products</h2>
+        <p>Top Quality!</p>
+        <div class="Search">
+            <form>
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                <input type="text" id="search-item" placeholder="Search products" onkeyup="search()">
+            </form>
+        </div>
+        <h3 class="no-match">No Matching Products......</h3>
+        <div class="pro-container" id="pro-container">
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+        
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Luminous Matte Foundation', 5, '$39.00', 'Product description goes here', 'assets/Product-images/HB-Luminous-foundation.jpg')">
+                <img src="assets/Product-images/HB-Luminous-foundation.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Luminous Matte Foundation</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$42.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Power Bullet Cream Glow Hydrating Lipstick', 5, '$27', '<h3>JUICY SHINE. ULTRA-COMFORTABLE. ALL-INCLUSIVE SHADES.</h3> Create an elevated, everyday makeup look with these super nourishing, ultra-hydrating lipsticks that effortlessly glide onto your lips.Available in pretty pink and spicy brown nude shades.</p> <h3>Ingredins</h3> <p>hydrogenated polyisobutene, diisostearyl malate, trimethylolpropane triisostearate, vp/hexadecene copolymer, polyethylene, microcrystalline wax/cera microcristallina/cire microcrystalline, methyl methacrylate crosspolymer, octyldodecanol, octyldodecyl stearoyl stearate, vp/eicosene copolymer, hydrogenated styrene/methylstyrene/indene copolymer, stearalkonium hectorite, rubus idaeus (raspberry) leaf extract, palmitoyl tripeptide-1, crithmum maritimum extract, caprylic/capric triglyceride, tribehenin, lactic acid, dibutyl lauroyl glutamide, hydrogenated vegetable oil, pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, ethylhexyl palmitate, butyl stearate, ethylene/propylene/styrene copolymer, butylene/ethylene/styrene copolymer, propylene carbonate, bht, silica, dicalcium phosphate, sorbitan isostearate, alumina, synthetic fluorphlogopite, calcium sodium borosilicate, calcium aluminum borosilicate, aluminum calcium sodium silicate, calcium titanium borosilicate, isostearyl alcohol, flavor/aroma, tin oxide. may contain (+/-) mica, yellow 6 lake (ci 15985), red 28 lake (ci 45410), red 6 (ci 15850), titanium dioxide (ci 77891), iron oxides (ci 77492), iron oxides (ci 77491), red 7 lake (ci 15850), yellow 5 lake (ci 19140), blue 1 lake (ci 42090).</p>','assets/Product-images/HB-Lipstick.jpg')">
+                <img src="assets/Product-images/HB-Lipstick.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Power Bullet Cream Glow Hydrating Lipstick</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$27.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro" onclick="openProductDetails('Charlotte Tilbury', 'The Hollywood Contour Duo', 5, '$54.00', '<h3>This is a CharlotteTilbury.com exclusive kit includes:</h3> <p>Please note, this kit does not come pre-boxed. Add my signature gift box at check out or select Fast and Fabulous delivery option to receive all your items beautifully packed in a gift box. Individual components may not be returned separately.</p><h3>Ingrediens</h3><p>HOLLYWOOD CONTOUR WAND: Aqua/Water/Eau, Cyclopentasiloxane, Isododecane, Mica, Cetyl Peg/Ppg-10/1 Dimethicone, Polyglyceryl-4 Diisostearate/Polyhydroxystearate/Sebacate, Triethylhexanoin, Phenylisopropyl Dimethicone, Glycerin, Silica, Hydrogenated Starch Hydrolysate, Disteardimonium Hectorite, Hydroxyacetophenone, Sodium Chloride, Alcohol, 1,2-Hexanediol, Caprylyl Glycol, Trisodium Ethylenediamine Disuccinate, Lindera Strychnifolia Root Extract, Phenoxyethanol, Ethylhexylglycerin, [May Contain/Peut Contenir (+/-): Titanium Dioxide (Ci 77891), Iron Oxides (Ci 77491, Ci 77492, Ci 77499)].</p>','assets/Product-images/CT-the-hollywood-contour-duo.jpg')">
+                <img src="assets/Product-images/CT-the-hollywood-contour-duo.jpg" alt="">
+                <div class="description">
+                    <span>Charlotte Tilbury</span>
+                    <h5>The Hollywood Contour Duo</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$54.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            <div class="pro">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+            
+            <div class="pro">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Hamad Toilet</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+            </div>
+
+            <!-- Template for a product -->
+            <!-- <div class="pro" onclick="openProductDetails('Brand-name', 'product-name', no of stars, '$price', 'Description','image-link')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+                
+            </div> -->
+            <!-- <a href="#"><ion-icon class="buy-now" name="cart-outline"></ion-icon></a> -->
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mails about <span>discounts</span> and our latest products</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter Email Address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <div class="column-container">
+            <div class="column">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong>Hamadibrahim1117@gmail.com</p>
+                <p><strong>Phone:</strong>+974 12345678</p>
+                <p><strong>Hours:</strong>Monday-Saturday, 9am - 4pm</p>
+    
+            </div>
+            <div class="column">
+                <h4>About</h4>
+                <a href="#">About Alsaaha</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                
+            </div>
+            <div class="column">
+                <h4>Follow Us</h4>
+                <div class="logos">
+                    <a href="#"><ion-icon class="social-logo facebook" name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo instagram" name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo twitter" name="logo-twitter"></ion-icon></a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 Alsaaha, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    
+    <script src="productdetailopener.js"></script>
+    <script src="searchbar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

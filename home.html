@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Saaha</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <a href="#w" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <ul class="navbar-links">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#home">FAQ/About Us</a></li>
+            <li><a href="contact.html">Contact Us </a></li>
+            <li><a href="#home"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
+    </nav>
+
+    <section id="Slide-banner">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev"><ion-icon class="arrow" name="chevron-back-outline"></ion-icon></button>
+          <button class="carousel-button next" data-carousel-button="next"><ion-icon class="arrow" name="chevron-forward-outline"></ion-icon></button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="assets/Home_images/Home-pic1.jpg" alt="Nature Image #1">
+            </li>
+            <li class="slide">
+              <img src="assets/Home_images/Home-pic2.jpg" alt="Nature Image #2">
+            </li>
+            <li class="slide">
+              <img src="assets/Home_images/Home-pic3.jpg" alt="Nature Image #3">
+            </li>
+            <li class="slide">
+              <img src="assets/Home_images/Home-pic6.jpg" alt="Nature Image #3">
+            </li>
+          </ul>
+          <div class="carousel-dots" data-carousel-dots></div>
+        </div>
+      </section>
+
+      <section class="autoplay-slider">
+        <h2>Our Brands</h2>
+        <div class="mini-slider">
+            <div class="slide-track">
+
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Dior-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Hudabeauty-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Lancome-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Revolution-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Tilbury-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Versace-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Dior-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Hudabeauty-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Lancome-logo.png" alt="">
+                </div>
+
+                <!-- same slides -->
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Dior-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Hudabeauty-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Lancome-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Revolution-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Tilbury-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Versace-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Dior-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Hudabeauty-logo.png" alt="">
+                </div>
+                <div class="mini-slide">
+                    <img src="assets/Brand_images/Lancome-logo.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+      </section>
+
+    <section id="Feature">
+        <div class="feature-container">
+            <h4>Wide Selection</h4>
+            <p>New beauty and cosemetics added daily</p>
+        </div>
+        <div class="feature-container">
+            <h4>Wide Selection</h4>
+            <p>New beauty and cosemetics added daily</p>
+        </div>
+        <div class="feature-container">
+            <h4>Wide Selection</h4>
+            <p>New beauty and cosemetics added daily</p>
+        </div>
+    </section>
+
+    <section id="Product-slider">
+        <h2>Best Sellers</h2>
+        <p>Summer ccllection des</p>
+        <button class="pre-btn"><ion-icon class="pre-arrow" name="chevron-back-outline"></ion-icon> </button>
+        <button class="next-btn"><ion-icon class="next-arrow" name="chevron-forward-outline"></ion-icon> </button>
+        <div class="pro-container">
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="Product-slider">
+        <h2>New Arrivals</h2>
+        <p>Summer ccllection des</p>
+        <button class="pre-btn"><ion-icon class="pre-arrow" name="chevron-back-outline"></ion-icon> </button>
+        <button class="next-btn"><ion-icon class="next-arrow" name="chevron-forward-outline"></ion-icon> </button>
+        <div class="pro-container">
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            <div class="pro" onclick="openProductDetails('HudaBeauty', 'Pretty Grunge Face Gloss', 5, '$39.00', 'The true filter effect gives instant coverage so seamless that it immediately unifies skin tone and texture as it blurs skin to give a radiant finish. The non-cakey formula is life proof (waterproof, super long wear (24hr), transfer proof, fade proof, sweat proof, humidity proof.) No matter what the weather, occasion or situation, #FauxFilter Luminous Matte will NEVER let you down. <h3>Igredins:</h3> <p>milkshake, angel food, vanilla, panna cotta, cashew, crème brulee, shrotbread, chai, custard, macaroon, toasted coconut, peaches n’ cream, cheesecake, latte, apple pie, amaretti, shortcake, tres leches, butter pecan, beignet, baklava, dulce de leche, biscotti, macchiato, brown sugar, churro, toffee, gingerbread, cinnamon, chocolate mousse, peanut butter cup, mocha, cocoa, nutmeg, coffee bean, chocolate truffle, hot fudge:water/aqua/eau, isododecane, methyl trimethicone, cetyl peg/ppg-10/1 dimethicone, hdi/trimethylol hexyllactone crosspolymer, ethylene/acrylic acid copolymer, trimethylsiloxyphenyl dimethicone, dimethicone, bis-hydroxyethoxypropyl dimethicone/ipdi copolymer ethylcarbamate, butylene glycol dicaprylate/dicaprate, glycerin, cetyl dimethicone, disteardimonium hectorite, phenyl trimethicone, sorbitan sesquioleate, rubus idaeus (raspberry) leaf extract, bambusa arundinacea stem powder.</p>', 'assets/Product-images/product.jpg')">
+                <img src="assets/Product-images/product.jpg" alt="">
+                <div class="description">
+                    <span>HudaBeauty</span>
+                    <h5>Pretty Grunge Face Gloss</h5>
+                    <div class="star">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h4>$39.00</h4>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="banner">
+        <h4>Huda Beauty!</h4>
+        <h2>Upto <span>20% Off</span> on all Huda Products</h2>
+        <button>Explore More</button>
+        <img src="assets/Brand_images/Hudabeauty-product-banner.png" alt="">
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mails about <span>discounts</span> and our latest products</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter Email Address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <div class="column-container">
+            <div class="column">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong>Hamadibrahim1117@gmail.com</p>
+                <p><strong>Phone:</strong>+974 12345678</p>
+                <p><strong>Hours:</strong>Monday-Saturday, 9am - 4pm</p>
+    
+            </div>
+            <div class="column">
+                <h4>About</h4>
+                <a href="#">About Alsaaha</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                
+            </div>
+            <div class="column">
+                <h4>Follow Us</h4>
+                <div class="logos">
+                    <a href="#"><ion-icon class="social-logo facebook" name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo instagram" name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo twitter" name="logo-twitter"></ion-icon></a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 Alsaaha, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="productdetailopener.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

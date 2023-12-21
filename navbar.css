@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+
+body{
+
+    background: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: rgb(229.5, 229.5, 229.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    position: sticky;
+    /* top: 0;
+    left: 0; */
+
+
+}
+
+.logo{
+    font-size: larger;
+    font-weight: 600;
+}
+.logo a{
+    text-decoration: none;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+    position: relative;
+}
+.navbar-links a:hover,
+.navbar-links a.active{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links a::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 3px;
+    transition: 10s ease;
+}
+.navbar-links a.active::after{
+    width: 70%;
+    
+}
+.toggle-btn{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    height: 24px;
+    width: 30px;
+    justify-content: space-between;
+
+}
+.bar{
+
+    height: 4px;
+    width: 100%;
+    background-color: black;
+}
+
+/* Mobile screens */
+@media (max-width:780px){
+    .navbar-links{
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        height: 100vh;
+        width: 0px;
+        background-color: rgb(229.5, 229.5, 229.5);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 0px;
+        top: 0;
+        right: 0px;
+        transition: 0.2s ease-in-out;
+
+    }
+    .navbar-links li{
+        margin-bottom: 10px;
+        transition: 0.3s ease-in-out;
+    }
+    .toggle-btn{
+        display: flex;
+        z-index: 10;
+    }
+    .navbar-links.active{
+        border-left: 1px solid black;
+        display: flex;
+        width: 300px;
+
+    }
+    .toggle-btn.active .bar:first-child{
+        transform: rotate(45deg) translate(10px,5px);
+    }
+    .toggle-btn.active .bar:last-child{
+        transform: rotate(-45deg) translate(10px,-5px);
+    }
+    .toggle-btn.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+}
+

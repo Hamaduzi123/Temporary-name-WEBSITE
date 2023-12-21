@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Saaha</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="otherstyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <a href="#w" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <ul class="navbar-links">
+            <li><a  href="home.html">Home</a></li>
+            <li><a  href="product.html">Products</a></li>
+            <li><a href="#home">FAQ/About Us</a></li>
+            <li><a class="active" href="#home">Contact Us </a></li>
+            <li><a href="#home"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
+    </nav>
+
+    <section id="page-header" class="contact-header">
+        <h2>Contact Us</h2>
+        <p>Anytime 24/7 </p>
+        <ion-icon class="call-icon" name="call"></ion-icon>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+            <p><ion-icon class="icon" name="mail"></ion-icon><strong>Email:</strong>Hamadibrahim1117@gmail.com</p>
+            <p><ion-icon class="icon" name="call"></ion-icon><strong>Phone:</strong>+974 12345678</p>
+            <p><ion-icon class="icon" name="time"></ion-icon><strong>Hours:</strong>Monday-Saturday, 9am - 4pm</p>
+        </div>
+
+        <form action="contact.php" method="post" class="form">
+            <span>Leave A Message</span>
+            <h2>Feel Free To Contact Us!</h2>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+
+    </section>
+
+    
+    
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mails about <span>discounts</span> and our latest products</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter Email Address">
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="#">Al Saaha</a>
+        </div>
+        <div class="column-container">
+            <div class="column">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong>Hamadibrahim1117@gmail.com</p>
+                <p><strong>Phone:</strong>+974 12345678</p>
+                <p><strong>Hours:</strong>Monday-Saturday, 9am - 4pm</p>
+    
+            </div>
+            <div class="column">
+                <h4>About</h4>
+                <a href="#">About Alsaaha</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                
+            </div>
+            <div class="column">
+                <h4>Follow Us</h4>
+                <div class="logos">
+                    <a href="#"><ion-icon class="social-logo facebook" name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo instagram" name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-logo twitter" name="logo-twitter"></ion-icon></a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 Alsaaha, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
