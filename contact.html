@@ -43,7 +43,7 @@
         </div>
 
         <!-- public/index.html -->
-        <form action="/api/process-form" method="post" class="form">
+        <form id="contactForm" action="/api/process-form" method="post" class="form">
             <span>Leave A Message</span>
             <h2>Feel Free To Contact Us!</h2>
             <input type="text" name="name" placeholder="Name" required>
@@ -52,6 +52,10 @@
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
+
+        <div id="popupMessage" style="display: none;">
+            Message sent successfully!
+        </div>
 
         
 
@@ -106,6 +110,42 @@
         </div>
 
     </footer>
+
+<script>
+    const contactForm = document.getElementById('contactForm');
+    const popupMessage = document.getElementById('popupMessage');
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const success = await sendFormData();
+
+        if (success) {
+            popupMessage.style.display = 'block';
+
+            contactForm.style.display = 'none';
+        }
+    });
+
+    async function sendFormData() {
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch('/api/process-form', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const result = await response.json();
+            return result.success === true;
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            return false;
+        }
+    }
+</script>
+
+
 
     <script src="home.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
