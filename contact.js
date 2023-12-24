@@ -5,7 +5,11 @@ async function submitForm() {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    // You can add additional client-side validation here if needed
+    // Simple client-side validation
+    if (!name || !email || !subject || !message) {
+        alert("Please fill in all required fields.");
+        return;
+    }
 
     // Send data to the server using Fetch API
     try {
