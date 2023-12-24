@@ -1,3 +1,5 @@
+const nodemailer = require('nodemailer');
+
 module.exports = async (req, res) => {
     if (req.method === 'POST') {
         const { name, email, subject, message } = req.body;
@@ -8,7 +10,7 @@ module.exports = async (req, res) => {
             res.status(200).json({ success: true });
         } catch (error) {
             // Log the error
-            console.error(error);
+            console.error('Error sending email:', error);
             // Return a more descriptive error message
             res.status(500).json({ error: 'Failed to send email' });
         }
@@ -16,7 +18,6 @@ module.exports = async (req, res) => {
         res.status(405).json({ error: 'Method Not Allowed' });
     }
 };
-
 
 async function sendEmail(name, email, subject, message) {
     const transporter = nodemailer.createTransport({
@@ -29,7 +30,7 @@ async function sendEmail(name, email, subject, message) {
 
     const mailOptions = {
         from: process.env.GMAIL_USER,
-        to: 'alansariabdulla17@gmail.com', 
+        to: 'recipient@example.com', // Replace with your recipient's email
         subject: subject,
         text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
     };
