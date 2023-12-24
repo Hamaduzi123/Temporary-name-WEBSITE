@@ -274,9 +274,10 @@ footer strong{
         height: 100%;
         padding: 0 1rem;
         font-size: 13px;
+        width: 100%;
     }
     #newsletter button{
-        width: 100%;
+        width: 75%;
     }
     #newsletter .form{
         display: flex;
@@ -285,6 +286,13 @@ footer strong{
     }
     footer .column-container{
         padding-left: 0px;
+    }
+    footer{
+        width: 90%;
+        margin: 30px auto;
+    }
+    footer p{
+        font-size: smaller;
     }
 
 }
@@ -295,7 +303,7 @@ footer strong{
     }
     #newsletter .form button{
         font-size: 12px;
-        padding: 10px 20px;
+        padding: 5px 15px;
     }
     .pro-container{
         grid-template-columns: 1fr;
@@ -359,4 +367,98 @@ footer strong{
     flex-direction: column;
     gap: 15px;
     
+}
+
+
+
+/* About page */
+
+#about-section{
+    width: 80%;
+    margin: 40px auto 10px auto;
+}
+#about-section h2{
+    font-size: 34px;
+}
+#about-section p{
+    margin: 8px 0;
+    text-align: justify;
+}
+
+#faq-section{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+#faq-section h2{
+    font-size: 34px;
+    margin: 2rem 0rem;
+}
+
+.faq{
+    max-height: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3{
+    font-size: 20px;
+}
+.answer{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 5s ease-in-out;
+}
+
+.faq.active ion-icon{
+    transform: rotate(180deg);
+}
+.faq ion-icon{
+    transition: 0.3s ease-in;
+}
+
+@keyframes fade{
+    form{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:400px){
+    #faq-section h2{
+        margin: 2rem 0 0 0;
+    }
+    .faq{
+        margin-top: 1.4rem;
+    }
+    .faq h3{
+        font-size: smaller;
+    }
+    .answer p{
+        font-size: smaller;
+    }
 }
