@@ -30,7 +30,7 @@ async function sendEmail(name, email, subject, message) {
 
     const mailOptions = {
         from: process.env.GMAIL_USER,
-        to: 'recipient@example.com', // Replace with your recipient's email
+        to: 'alansariabdulla17@gmail.com', // Replace with your recipient's email
         subject: subject,
         text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
     };
