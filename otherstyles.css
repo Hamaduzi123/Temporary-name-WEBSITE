@@ -409,6 +409,10 @@ footer strong{
 
 /* About page */
 
+#page-header.about-header{
+    background-image: url(assets/Page-headers/About-page.jpg);
+}
+
 #about-section{
     width: 80%;
     margin: 40px auto 10px auto;
