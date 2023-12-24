@@ -43,14 +43,14 @@
         </div>
 
         <!-- public/index.html -->
-        <form action="/api/process-form" method="post" class="form" onsubmit="return submitForm()">
+        <form id="contactForm" class="form">
             <span>Leave A Message</span>
             <h2>Feel Free To Contact Us!</h2>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="submitForm()">Submit</button>
         </form>
 
         
@@ -108,14 +108,36 @@
     </footer>
 
     <script>
-        function submitForm() {
+        async function submitForm() {
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
             // You can add additional client-side validation here if needed
     
-            // Show a confirmation pop-up
-            alert("Your message has been sent! Thank you.");
+            // Send data to the server using Fetch API
+            try {
+                const response = await fetch('/api/process-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, subject, message }),
+                });
     
-            // Return false to prevent the form from submitting normally
-            return false;
+                if (response.ok) {
+                    // Show a confirmation pop-up or update the UI
+                    alert("Your message has been sent! Thank you.");
+                } else {
+                    // Handle errors or show an appropriate message
+                    alert("Failed to send the message. Please try again.");
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert("An error occurred. Please try again later.");
+            }
         }
     </script>
     <script src="home.js"></script>
