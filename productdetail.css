@@ -109,11 +109,10 @@
     .product-info{
         margin-top: 8%;
         width: 100%;
+        margin-left: 0px;
+        padding-left: 20px;
     }
     #pro-details{
         flex-direction: column;
-    }
-    .product-info{
-        margin-left: 20px;
     }
 }
