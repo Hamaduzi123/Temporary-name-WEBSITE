@@ -1,4 +1,7 @@
-async function submitForm() {
+async function submitForm(event) {
+    // Prevent default form submission
+    event.preventDefault();
+
     // Get form data
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -8,6 +11,12 @@ async function submitForm() {
     // Simple client-side validation
     if (!name || !email || !subject || !message) {
         alert("Please fill in all required fields.");
+        return;
+    }
+
+    // Additional validation for email format
+    if (!isValidEmail(email)) {
+        alert("Please enter a valid email address.");
         return;
     }
 
@@ -38,4 +47,10 @@ async function submitForm() {
         console.error('Error:', error);
         alert("An error occurred. Please try again later.");
     }
+}
+
+// Function to validate email format
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
