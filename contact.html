@@ -42,7 +42,8 @@
             <p><ion-icon class="icon" name="time"></ion-icon><strong>Hours:</strong>Monday-Saturday, 9am - 4pm</p>
         </div>
 
-        <form action="contact.php" method="post" class="form">
+        <!-- public/index.html -->
+        <form action="/api/process-form" method="post" class="form">
             <span>Leave A Message</span>
             <h2>Feel Free To Contact Us!</h2>
             <input type="text" name="name" placeholder="Name" required>
@@ -51,6 +52,7 @@
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
+
         
 
     </section>
